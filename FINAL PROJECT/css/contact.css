@@ -1,0 +1,107 @@
+
+
+/* This is the start of my navigation  */
+
+nav{
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    background-color: #00C2CB;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+  }
+
+nav ul a{
+    text-decoration: none;
+}  
+
+nav ul a li{
+    display: inline-block;
+    color: #fff;
+    margin:0 0px;
+    padding:21px 30px;
+}
+
+nav ul a li:hover{
+    color: #00C2CB;
+    background-color: #fff;
+}
+
+li {
+    float: right;
+ } 
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }  
+    
+li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+li a:active {
+    color: #FFFDFB;
+    background-color: #44a2f8;
+  }
+
+.logo {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.logo .logo2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo:hover .logo2 {
+    display: inline;
+}
+/* This is the end of my navigation  */
+
+/* This is the start of my  footer  */
+
+footer{
+    white-space: normal;
+    background: hsla(183, 100%, 40%, 1);
+  
+    background: linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00C2CB", endColorstr="#CCB3D1", GradientType=1 );
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+  }
+  footer p{
+    color: white;
+  }
+  
+  footer a {
+    padding: 0;
+  }
+  .fa-linkedin {
+   color:#0066CC;
+  }
+  
+  /* This is the end of my  footer  */

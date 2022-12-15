@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/FINAL PROJECT/Fonts/Roboto-Regular.woff2') format('woff2'),
+        url('/FINAL PROJECT/Fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hard';
+    src: url('/FINAL PROJECT/Fonts/HardTimesRegular.woff2') format('woff2'),
+        url('/FINAL PROJECT/Fonts/HardTimesRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PgLang Roman';
+    src: url('/FINAL PROJECT/Fonts/PgLang.woff2') format('woff2'),
+        url('/FINAL PROJECT/Fonts/PgLang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

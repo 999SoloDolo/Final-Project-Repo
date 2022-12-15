@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('/FINAL PROJECT/Fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/FINAL PROJECT/Fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hard';
+  src: url('/FINAL PROJECT/Fonts/HardTimesRegular.woff2') format('woff2'),
+      url('/FINAL PROJECT/Fonts/HardTimesRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PgLang Roman';
+  src: url('/FINAL PROJECT/Fonts/PgLang.woff2') format('woff2'),
+      url('/FINAL PROJECT/Fonts/PgLang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+  a {
+    text-decoration: none;
+  }
+  
+/* This is the start of my navigation  */
+
+nav{
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    background-color: #00C2CB;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+  }
+
+nav ul a{
+    text-decoration: none;
+}  
+
+nav ul a li{
+    display: inline-block;
+    color: #fff;
+    margin:0 0px;
+    padding:21px 30px;
+}
+
+nav ul a li:hover{
+    color: #00C2CB;
+    background-color: #fff;
+}
+
+li {
+    float: right;
+ } 
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }  
+    
+li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+li a:active {
+    color: white;
+    background-color: #44a2f8;
+  }
+
+.logo {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.logo .logo2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.logo:hover .logo2 {
+    display: inline;
+}
+/* This is the end of my navigation  */
+
+
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      position: absolute;
+    }
+    
+  
+    .div1 { 
+      width:  20px;  
+      height: 20px;
+      grid-area: 1 / 1 / 3 / 2; 
+      box-shadow:4px 1px 1px rgba(0, 0, 0, 0.4);
+    }
+
+    .div2{
+      padding-top: 50px;
+      padding-left: 90px;
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .div4 { grid-area: 3 / 3 / 4 / 4; }
+    .div5 { grid-area: 4 / 3 / 5 / 4; }
+    .div6 { grid-area: 3 / 1 / 4 / 2; }
+    .div7 { grid-area: 4 / 1 / 5 / 2; }
+    .div8 { grid-area: 5 / 3 / 6 / 4; }
+    .div9 { grid-area: 6 / 3 / 7 / 4; }
+
+
+  
+  .main-heading {
+    font-family: 'Hard';
+    font-size: 50px;
+  }
+  
+  .main-heading--emphasis {
+    color: #00C2CB;
+    font-family: "PgLang Roman";
+  }
+  
+
+.div1 img {
+width:  400px;
+height: 400px;
+}
+
+.div3 p{
+display: inline-block;
+}
+ 
+  .typing-wrapper {
+    display: inline-flex;
+  }
+  
+
+  .typed-out {
+    font-family:'PgLang Roman';
+    overflow: hidden;
+    white-space: nowrap;
+    width:0;
+    animation: typing 2s steps(32, end) forwards;
+    display: inline-block;
+  }
+  
+  .cursor {
+    margin-left: 5px;
+    width: 5px;
+    background: transparent;
+    animation: blink 0.9s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { background: transparent;}
+    50% { background: black}
+  }
+
+  p {
+text-align: center;
+  }
+
+  p span {
+    display: inline-block;
+    color: #fdfdfd;
+    background-color: gray;
+  }
+
+
+/* This is the start of my  footer  */
+
+footer{
+  white-space: normal;
+  background: hsla(183, 100%, 40%, 1);
+
+  background: linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+  
+  background: -moz-linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+  
+  background: -webkit-linear-gradient(90deg, hsla(183, 100%, 40%, 1) 0%, hsla(290, 25%, 76%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00C2CB", endColorstr="#CCB3D1", GradientType=1 );
+  height: 100%;
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+}
+footer p{
+  color: white;
+}
+
+footer a {
+  padding: 0;
+}
+.fa-linkedin {
+ color:#0066CC;
+}
+
+/* This is the end of my  footer  */
+ 
+
